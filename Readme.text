@@ -5,7 +5,10 @@ During execution each script executed on cmd or terminal is one node
 Multiple terminals are required
 
 To execute one script:
-Example: python3 P2PChordApp.py 127.0.0.2 5000
+Example: python3 MainNode.py 127.0.0.2 5000
+	   python3 MainNode.py 127.0.0.1 6000
+	   python3 MainNode.py 127.0.0.6 5050
+	   python3 MainNode.py 127.0.0.4 6050
 If command line arguments are not given the script will use the default values
 On exeption a menu will be presented to the user 
 Based on user input the program will provide prompts to enter information
