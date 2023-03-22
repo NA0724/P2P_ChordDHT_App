@@ -1,0 +1,33 @@
+README
+
+To execute you need multiple copies of the same script running simultaneously
+During execution each script executed on cmd or terminal is one node
+Multiple terminals are required
+
+To execute one script:
+Example: python3 P2PChordApp.py 127.0.0.2 5000
+If command line arguments are not given the script will use the default values
+On exeption a menu will be presented to the user 
+Based on user input the program will provide prompts to enter information
+
+Example: if asking to join network the user must input IP and PORT of the node they wish to join
+
+When uploading a file from a node, the file must be present in the directory of the script
+When downloading if the file is already present in the directory no change will happen
+When downloading make sure the node you are downloading from does not have the same file in it's directory
+
+If error occurs such as "socket not opened" or infinite loop error:
+Unfortunately, the only way to fix these errors are to shut down the node and restart. 
+If shutting down only one node doesn't fix the error, shutting down the entire network and restarting will solve
+
+To simulate a network of nodes using the Chord DHT protocol, multiple scripts need to be executed
+
+These are the libraries required, most are present by default however if one is unavailable: sudo pip install <name_of_library>
+ socket, random
+ threading
+ pickle
+ sys
+ time
+ hashlib
+ os
+from collections import OrderedDict
